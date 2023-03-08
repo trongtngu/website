@@ -1,0 +1,42 @@
+.navbar{
+  display: flex;
+  
+  font-weight: bold;
+  font-size: auto;
+}
+
+.navbar-item {
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: solid;
+  border-color: #3c3939;
+  padding-bottom: 1px;
+}
+
+.navbar-item:hover  {
+  border-color: white;
+}
+
+.name-box {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 20pt;
+}
+
+.about-me-box {
+  margin-left: 10px;
+}
+
+.title {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  
+  font-weight: bold;
+  font-size: 30pt;
+  padding-top: 4vh;
+}
+
+hr {
+  width: 95vw;
+}
