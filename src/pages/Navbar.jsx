@@ -17,13 +17,11 @@ function Navbar () {
     navigate('/misc')
   }
     return (<>
-    <div className="wrapper">
-      <div className="name-box">trong nguyen</div>
-      <div className="navbar">
-        <a className="navbar-item" onClick={gotoAbout}>about</a>
-        <a className="navbar-item" onClick={gotoProjects}>projects</a>
-        <a className="navbar-item" onClick={gotoMisc}>misc</a>
-      </div>
+    <div className="name-box">trong nguyen</div>
+    <div className="navbar">
+      <a className="navbar-item" onClick={gotoAbout}>about</a>
+      <a className="navbar-item" onClick={gotoProjects}>projects</a>
+      <a className="navbar-item" onClick={gotoMisc}>misc</a>
     </div>
   </>)
 }

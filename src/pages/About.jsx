@@ -1,8 +1,11 @@
 function About () {
   return (<>
-    <div className='title'>about me</div>
+
+    <div className="about-title-box">
+        Hi! I'm Trong, an aspiring Software Developer from Sydney
+    </div>
     <div className="about-me-box">
-      Hi my name's Trong! I am an aspiring software developer from Sydney.
+      I have programmed microcontrollers for implants and am currently working on a personal full-stack app. I enjoy playing games, going on hikes and weightlifting.
     </div>
   </>)
 }

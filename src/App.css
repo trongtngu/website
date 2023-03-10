@@ -25,7 +25,18 @@
 }
 
 .about-me-box {
-  margin-left: 10px;
+  margin-left: 50px;
+  width: 500px;
+}
+
+.about-title-box {
+  width: 600px;
+  font-size: 25pt;
+  font-weight: bold;
+
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .title {
