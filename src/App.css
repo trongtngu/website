@@ -25,7 +25,6 @@
 }
 
 .about-me-box {
-  margin-left: 50px;
   width: 500px;
 }
 
@@ -34,7 +33,6 @@
   font-size: 25pt;
   font-weight: bold;
 
-  padding-left: 50px;
   padding-top: 50px;
   padding-bottom: 25px;
 }
@@ -70,17 +68,50 @@ hr {
   margin-left: auto;
   margin-right: auto;
 
-  width: 95vw;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  width: calc(95vw - 200px);
 }
 
 .projects-box {
-  background-color: orange;
+  max-width: calc((95vw - 200px));
+  background-color: #504c4c;
+  margin: 10px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  font-size: 40pt;
+  font-weight: bold;
+  color: #504c4c;
+}
+
+.projects-box:hover {
+  background-color: #005066;
+  opacity: 0.6;
+  color: white;
 }
 
 .center-wrapper > .projects-box {
-  flex: 1 1 300px;
+  flex: 1 1 700px;
 }
 
 .about-page {
   flex-direction: column;
+}
+
+.project1-img {
+  background: url('./components/mini_solar.jpg');
+  width: 70%;
+  height: 70%;
+  background-position: center;
+}
+
+.project-name {
+  float: left;
 }
