@@ -1,7 +1,7 @@
 function About () {
   return (<>
 
-    <div className="about-title-box">
+    <div className="subtitle-box">
         Hi! I'm Trong, an aspiring Software Developer from Sydney
     </div>
     <div className="about-me-box">
