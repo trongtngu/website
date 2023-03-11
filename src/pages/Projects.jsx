@@ -1,9 +1,7 @@
 function Projects () {
   return (<>
-    <div className="projects-wrapper">
-      <div className="subtitle-projects-box">
-        projects
-      </div>
+    <div className="center-wrapper">
+      <div className="projects-subtitle">projects</div>
       <div className="projects-box">HELLO</div>
       <div className="projects-box">HELLO</div>
       <div className="projects-box">HELLO</div>
