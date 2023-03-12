@@ -40,6 +40,7 @@
 .projects-subtitle {
   background-color: #3c3939;
   width: 95vw;
+  padding-left: 10px;
 }
 
 .title {
@@ -92,8 +93,8 @@ hr {
 }
 
 .projects-box:hover {
-  background-color: #005066;
-  opacity: 0.6;
+  background-color: #C1E1C1;
+  opacity: 0.8;
   color: white;
 }
 
@@ -107,11 +108,21 @@ hr {
 
 .project1-img {
   background: url('./components/mini_solar.jpg');
-  width: 70%;
-  height: 70%;
-  background-position: center;
 }
 
-.project-name {
-  float: left;
+.project2-img {
+  background: url('./components/app_pic.jpg');
+}
+
+.project3-img {
+}
+
+.project4-img {
+}
+
+.project1-img, .project2-img, .project3-img, .project4-img  {
+  width: 70%;
+  height: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -4,31 +4,31 @@ function Projects () {
       <div className="projects-subtitle">projects</div>
       <div className="projects-box">
         <div className="project-name">
-          MINI SOLAR
+          Mini Solar Implant
         </div>
 
         <div className="project1-img"></div>
       </div>
       <div className="projects-box">
         <div className="project-name">
-          MINI SOLAR
+          Foodie App
         </div>
 
-        <div className="project1-img"></div>
+        <div className="project2-img"></div>
       </div>
       <div className="projects-box">
         <div className="project-name">
-          MINI SOLAR
+          Restaurant Crawler
         </div>
 
-        <div className="project1-img"></div>
+        <div className="project3-img"></div>
       </div>
       <div className="projects-box">
         <div className="project-name">
-          MINI SOLAR
+          Loop Hero Clone
         </div>
 
-        <div className="project1-img"></div>
+        <div className="project4-img"></div>
       </div>
     </div>
   </>)  

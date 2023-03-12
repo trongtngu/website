@@ -23,6 +23,7 @@ function Navbar () {
       <a className="navbar-item" onClick={gotoProjects}>projects</a>
       <a className="navbar-item" onClick={gotoMisc}>misc</a>
     </div>
+    <hr/>
   </>)
 }
 
