@@ -107,17 +107,19 @@ hr {
 }
 
 .project1-img {
-  background: url('./components/mini_solar.jpg');
+  background: url('./components/miniSolarArt.png');
 }
 
 .project2-img {
-  background: url('./components/app_pic.jpg');
+  background: url('./components/pizza.png');
 }
 
 .project3-img {
+  background: url('./components/spider.png');
 }
 
 .project4-img {
+  background: url("./components/loophero.png")
 }
 
 .project1-img, .project2-img, .project3-img, .project4-img  {

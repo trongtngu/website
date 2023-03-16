@@ -18,7 +18,7 @@ function Projects () {
       </div>
       <div className="projects-box">
         <div className="project-name">
-          Restaurant Crawler
+          Restaurant Web Crawler
         </div>
 
         <div className="project3-img"></div>
