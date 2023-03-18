@@ -6,7 +6,16 @@ function Projects () {
   const [openOne, setOpenOne] = React.useState(false);
   const [openTwo, setOpenTwo] = React.useState(false);
   const [openThree, setOpenThree] = React.useState(false);
-  const [openFour, setOpenFour] = React.useState(false)
+  const [openFour, setOpenFour] = React.useState(false);
+
+  React.useEffect(()=> {
+    if (openOne || openTwo || openThree || openFour) {
+      document.body.style.overflow = 'hidden';
+    }
+    else {
+      document.body.style.overflow = 'unset';
+    }
+  })
 
   return (<>
     <div className="center-wrapper">
