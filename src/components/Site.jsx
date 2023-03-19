@@ -1,8 +1,7 @@
 import Navbar from '../pages/Navbar.jsx'
 import About from '../pages/About.jsx'
 import Projects from '../pages/Projects.jsx'
-import Misc from '../pages/Misc.jsx'
-
+import Tidbits from '../pages/Tidbits.jsx'
 import React from 'react'
 
 import {
@@ -24,7 +23,7 @@ function Site () {
     <Routes>
     <Route path = '/about'element = {<About/>}/>
     <Route path = '/projects' element = {<Projects/>}/>
-    <Route path = '/misc' element = {<Misc/>}/>
+    <Route path = '/tidbits' element = {<Tidbits/>}/>
     </Routes>
   </>)
 }

@@ -14,11 +14,16 @@ function Navbar () {
     navigate('/projects')
   }
 
+  const gotoTidbits = () => {
+    navigate('/tidbits')
+  }
+
     return (<>
     <div className="name-box">trong nguyen</div>
     <div className="navbar">
       <div className="navbar-item" onClick={gotoAbout}>about</div>
       <div className="navbar-item" onClick={gotoProjects}>projects</div>
+      <div className="navbar-item" onClick={gotoTidbits}>tidbits</div>
     </div>
     <hr/>
   </>)

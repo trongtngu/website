@@ -1,6 +1,9 @@
 import Modal from '../components/Modal.jsx'
 import React from 'react'
 import Projects from './Projects.jsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee} from '@fortawesome/free-solid-svg-icons'
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 function About () {
 
@@ -17,10 +20,11 @@ function About () {
 
       <div className="external-links">
         <a className="external-link-item" href="https://github.com/trongtngu" target="_blank">
-          github
+          <FontAwesomeIcon icon={faGithub} />
         </a>
         <a className="external-link-item" href="https://www.linkedin.com/in/trong-nguyen-91a7231a2/" target="_blank">
-          linkedin
+
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
 
