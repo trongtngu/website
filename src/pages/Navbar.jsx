@@ -16,6 +16,7 @@ function Navbar () {
 
   const gotoTidbits = () => {
     navigate('/tidbits')
+    // TODO: add tidbits navbar item back
   }
 
     return (<>
@@ -23,7 +24,6 @@ function Navbar () {
     <div className="navbar">
       <div className="navbar-item" onClick={gotoAbout}>about</div>
       <div className="navbar-item" onClick={gotoProjects}>projects</div>
-      <div className="navbar-item" onClick={gotoTidbits}>tidbits</div>
     </div>
     <hr/>
   </>)
