@@ -217,6 +217,8 @@ hr {
   border-bottom: solid;
   border-width: thin;
   border-color: white;
+
+  max-width: 700px;
 }
 
 .tidbit-subtitle-text:hover {
