@@ -17,6 +17,8 @@ function Navbar () {
   const gotoTidbits = () => {
     navigate('/tidbits')
     // TODO: add tidbits navbar item back
+
+    // <div className="navbar-item" onClick={gotoTidbits}>tidbits</div>
   }
 
     return (<>

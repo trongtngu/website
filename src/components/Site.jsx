@@ -3,7 +3,8 @@ import About from '../pages/About.jsx'
 import Projects from '../pages/Projects.jsx'
 import Tidbits from '../pages/Tidbits.jsx'
 import React from 'react'
-
+import SeleniumBlog from '../pages/SeleniumBlog.jsx'
+import FlexVisualiser from '../pages/FlexVisualiser.jsx'
 import {
   Routes,
   Route,
@@ -24,6 +25,8 @@ function Site () {
     <Route path = '/about'element = {<About/>}/>
     <Route path = '/projects' element = {<Projects/>}/>
     <Route path = '/tidbits' element = {<Tidbits/>}/>
+    <Route path = '/tidbits/pySelenium' element={<SeleniumBlog/>}/>
+    <Route path = '/tidbits/flexVisualiser' element={<FlexVisualiser/>}/>
     </Routes>
   </>)
 }
