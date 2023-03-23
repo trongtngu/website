@@ -3,6 +3,7 @@ import React from 'react'
 export default function FlexVisualiser() {
 
   // TODO: make canvas bigger and add more boxes
+  // make button to add more boxes
 
   const canvasRef = React.useRef();
 
@@ -129,6 +130,8 @@ export default function FlexVisualiser() {
 
           <div id="visual-canvas" ref={canvasRef}>
             <div className="visual-box">1</div>
+            <div className="visual-box">2</div>
+            <div className="visual-box">3</div>
         </div>
 
         </div>

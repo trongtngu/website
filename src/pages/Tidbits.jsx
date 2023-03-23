@@ -11,9 +11,6 @@ export default function Tidbits() {
 
   let navigate = useNavigate();
 
-  const gotoPySelenium = () => {
-    navigate('/tidbits/pySelenium')
-  }
 
   const gotoFlexVisualiser = () => {
     navigate('/tidbits/FlexVisualiser')
@@ -29,17 +26,8 @@ export default function Tidbits() {
       </div>
 
       <div className="tidbit-container">
-        <div className='tidbit-subtitle-text' onClick={gotoPySelenium}>Beginner guide to Python Selenium
-          <div className="definition wonky">19 Mar '23</div>
-        </div>
         <div className='tidbit-subtitle-text' onClick={gotoFlexVisualiser}>
           Flexbox Visualiser
-          <div className="definition wonky">19 Mar '23</div>
-        </div>
-        <div className='tidbit-subtitle-text'>Calorie Tracking - Food Tips
-          <div className="definition wonky">19 Mar '23</div>
-        </div>
-        <div className='tidbit-subtitle-text'>Physical Exercise Recommendations
           <div className="definition wonky">19 Mar '23</div>
         </div>
       </div>
