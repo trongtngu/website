@@ -46,6 +46,7 @@ export default function FlexVisualiser() {
       setGap("columned")
     }
     else {
+      canvasRef.current.style.columnGap = "0px"
       canvasRef.current.style.gap = event.target.value;
       setGap(event.target.value);
     }
