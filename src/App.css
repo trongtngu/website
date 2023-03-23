@@ -245,23 +245,37 @@ hr {
   padding-top: 20px;
 }
 
-.visual-canvas {
+#visual-canvas {
+  display: flex;
   background-color: #504c4c;
   width: 500px;
   height: 500px;
 }
 
 .visual-box {
+  display: flex;
   background-color: #C1E1C1;
-  width: 33%;
-  height: 33%;
-  border: solid black
+  width: 33.33%;
+  height: 33.33%;
+  color: black;
+  font-size: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid orangered;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .visual-buttons-container {
-  
   width: 30%;
   max-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.visual-selector {
   display: flex;
   flex-direction: column;
 }
