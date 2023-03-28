@@ -95,18 +95,51 @@ hr {
   justify-content: center;
   align-items: center;
 
+  border-radius: 10px;
 
-  font-size: 40pt;
-  font-weight: bold;
-  color: #504c4c;
+  position: relative;
+  cursor: pointer;
 }
 
+.project-name {
+  font-size: 40pt;
+  font-weight: bold;
+  color: white;
+  font-family: "Space Mono", monospace;
+  padding-bottom: 10px;
+}
+
+/*
 .projects-box:hover {
   background-color: #C1E1C1;
   opacity: 0.8;
   color: white;
   cursor: pointer;
   transition: background-color 0.1s ease;
+}
+*/
+
+.projects-box:after {
+  background: linear-gradient(
+    transparent,
+    #C1E1C1,
+    transparent
+  );
+  height: 100px;
+  width: 1px;
+  position: absolute;
+  left: -1px;
+  top: 65%;
+  content: "";
+  opacity: 0;
+  color: white;
+
+  transition: top 600ms ease, opacity 600ms ease;
+}
+
+.projects-box:hover:after {
+  top: 15%;
+  opacity: 1;
 }
 
 .center-wrapper > .projects-box {
@@ -138,6 +171,7 @@ hr {
   height: 70%;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .project-modal {

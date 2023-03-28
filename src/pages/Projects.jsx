@@ -8,6 +8,8 @@ function Projects () {
   const [openThree, setOpenThree] = React.useState(false);
   const [openFour, setOpenFour] = React.useState(false);
 
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
   React.useEffect(()=> {
     if (openOne || openTwo || openThree || openFour) {
       document.body.style.overflow = 'hidden';
@@ -17,14 +19,36 @@ function Projects () {
     }
   })
 
+  const scrambleLetters = (e) => {
+
+    let iterations = 0
+
+    const interval = setInterval(() => {
+      e.target.innerText = e.target.innerText.split("")
+        .map((letter, index) => {
+          if (index < iterations) {
+            return e.target.dataset.value[index];
+          }
+          return letters[Math.floor(Math.random()*26)]
+        }
+        )
+        .join("");
+
+      if (iterations >= e.target.dataset.value.length)  clearInterval(interval);
+
+      iterations += 1/2;
+    }, 30)
+
+  }
+
   return (<>
     <div className="center-wrapper">
       <div className="projects-subtitle">projects</div>
 
       <div className="projects-box" onClick={() => setOpenOne(true)}>
 
-        <div className="project-name">
-          Mini Solar Implant
+        <div data-value="MINI SOLAR IMPLANT" className="project-name" onMouseOver={scrambleLetters}>
+          MINI SOLAR IMPLANT
         </div>
 
         <div className="project1-img"></div>
@@ -43,8 +67,8 @@ function Projects () {
       </Modal>
 
       <div className="projects-box" onClick={() => setOpenTwo(true)}>
-        <div className="project-name">
-          Foodie App
+        <div data-value="FOODIE APP"className="project-name" onMouseOver={scrambleLetters}>
+          FOODIE APP
         </div>
 
         <div className="project2-img"></div>
@@ -63,8 +87,8 @@ function Projects () {
       </Modal>
 
       <div className="projects-box" onClick={() => setOpenThree(true)}>
-        <div className="project-name">
-          Restaurant Web Crawler
+        <div data-value="RESTAURANT CRAWLER"className="project-name" onMouseOver={scrambleLetters}>
+          RESTAURANT CRAWLER
       </div>
         <div className="project3-img"></div>
       </div>
@@ -82,8 +106,8 @@ function Projects () {
       </Modal>
 
       <div className="projects-box" onClick={() => setOpenFour(true)}>
-        <div className="project-name">
-          Loop Hero Clone
+        <div data-value="LOOP HERO CLONE"className="project-name" onMouseOver={scrambleLetters}>
+          LOOP HERO CLONE
         </div>
         <div className="project4-img"></div>
       </div>
